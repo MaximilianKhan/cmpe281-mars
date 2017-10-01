@@ -26,7 +26,9 @@
 #### What we achieved?
 * Front End mockup
 * Updated backlog
+* Research on multiple user shopping cart and rest API
 
 #### What we intend to achieve next week?
 * Research on partition tolerance implementation
 * Front End design initialization
+* continue Research on multiple user shopping cart
