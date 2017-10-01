@@ -13,6 +13,20 @@
 * [Link to Weekly Kanban Flow Diagram](https://docs.google.com/spreadsheets/d/1QsAQAkkbM26nXkL4m-YrPO3oelnzG0Ibo9vUfFSNVpU/edit#gid=1756408550)
 
 ## Weekly Team Meeting Record
+### Week 1
+#### What we achieved?
+* Created product backlog
+* Setup GitHub project and Wiki page
 
-* [Link to Weekly Team Meeting Record](https://github.com/nguyensjsu/cmpe281-mars/wiki/Weekly-Team-Meeting-Record)
+#### What we intend to achieve next week?
+* Research on setting up NoSQL databases on AWS
+* Front-end UI mockup
 
+### Week 2
+#### What we achieved?
+* Front End mockup
+* Updated backlog
+
+#### What we intend to achieve next week?
+* Research on partition tolerance implementation
+* Front End design initialization
