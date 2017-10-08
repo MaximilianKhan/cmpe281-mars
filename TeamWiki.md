@@ -32,3 +32,12 @@
 * Research on partition tolerance implementation
 * Front End design initialization
 * continue Research on multiple user shopping cart
+
+### Week 3
+#### What we achieved?
+* Front End design initialization
+* Getting familiart with Go syntax
+
+#### What we intend to achieve next week?
+* Research on partition tolerance implementation
+* MongoDB on Docker
