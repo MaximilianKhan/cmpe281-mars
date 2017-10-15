@@ -1,1 +1,25 @@
 This file contains schema creation and population script.
+
+db.items.insert(
+        { 
+          Id: 1,
+          name: 'item1',
+          price: 12,
+          description: 'item1 desc' 
+        }
+    ) ;
+
+Operating includes
+find
+sort
+
+Performance:
+Add index 
+db.products.ensure_index([
+
+Scaling
+Shard database
+db.command('shardCollection',...
+
+Reference:
+https://docs.mongodb.com/ecosystem/use-cases/product-catalog/
