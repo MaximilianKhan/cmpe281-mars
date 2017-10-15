@@ -9,6 +9,15 @@ db.items.insert(
         }
     ) ;
 
+db.users.insert(
+        { 
+          Id: 1,
+          user: 'test1',
+          address: 'San Jose'
+          phone: 353535
+        }
+    ) ;
+    
 Operating includes
 find
 sort
