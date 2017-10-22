@@ -41,3 +41,11 @@
 #### What we intend to achieve next week?
 * Research on partition tolerance implementation
 * MongoDB on Docker
+
+### Week 4
+#### What we achieved?
+* Project Architecture
+* API init
+
+#### What we intend to achieve next week?
+* API Dev
