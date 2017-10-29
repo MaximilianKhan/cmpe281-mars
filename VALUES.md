@@ -7,7 +7,8 @@ The Agile Value of simplicity uses the KISS (Keep It Stupid and Simple) rule. Th
 * Roles simplicity (self-organizing team)
 
 ##### Simplicity in Project Architecture
-Sketched the project architecture to enable visual representation on what is going to be built.
+* Sketched the project architecture to enable visual representation on what is going to be built.
+* Implementing Redis for both User Account information and User Sessions to minimize code and container maintenance.
 
 ##### References
 
