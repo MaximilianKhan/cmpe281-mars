@@ -9,6 +9,9 @@
 ## Kanban Task Board
 * [Link to Task Board](https://github.com/nguyensjsu/cmpe281-mars/projects/1)
 
+## Scrum Board
+* [Link to Scrum Board](https://docs.google.com/spreadsheets/d/1l-5witHzKqrAk6PDguSmRimBODiyl23vC3I7o1znJGY/edit#gid=1067209690)
+
 ## Weekly Kanban Flow Diagram
 * [Link to Weekly Kanban Flow Diagram](https://docs.google.com/spreadsheets/d/1QsAQAkkbM26nXkL4m-YrPO3oelnzG0Ibo9vUfFSNVpU/edit#gid=1756408550)
 
@@ -46,6 +49,13 @@
 #### What we achieved?
 * Project Architecture
 * API init
+
+#### What we intend to achieve next week?
+* API Dev
+
+### Week 5
+#### What we achieved?
+* API to Redis DB
 
 #### What we intend to achieve next week?
 * API Dev
