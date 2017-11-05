@@ -59,3 +59,10 @@
 
 #### What we intend to achieve next week?
 * API Dev
+
+### Week 6
+#### What we achieved?
+* Initial shopping code
+
+#### What we intend to achieve next week?
+* Keep working on the API Dev
