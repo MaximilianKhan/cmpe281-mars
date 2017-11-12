@@ -66,3 +66,11 @@
 
 #### What we intend to achieve next week?
 * Keep working on the API Dev
+
+### Week 7
+#### What we achieved?
+* Explore master slave mongodb installation on aws
+* mongo database design
+
+#### What we intend to achieve next week?
+* API for product and user
