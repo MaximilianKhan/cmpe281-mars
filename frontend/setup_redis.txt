@@ -1,0 +1,11 @@
+Steps to setup redis cluster:
+
+ElastiCache Console on AWS
+Cluster Engine - Redis
+Name: CMPE281-project
+Port 6379
+Node type: t2.micro
+# replicas: 2
+
+Adv Settings:
+-Subnet: RedisSubnet

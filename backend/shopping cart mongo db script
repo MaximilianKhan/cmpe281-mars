@@ -1,0 +1,23 @@
+// create database shop
+
+// create following collections
+1. users 
+2. products
+3. usergroups
+4. carts
+5. orders
+
+db.users.insert({userId: '1', name:'John',address:'sanjose'});
+db.users.insert({userId: '2', name:'Amanda',address:'sanfrancisco'});
+
+db.products.insert({productId:'1',productName:'skateboard', description:'desc1', price:'100'});
+db.products.insert({productId:'2',productName:'xootr', description:'desc1', price:'20'});
+db.products.insert({productId:'3',productName:'soccer ball', description:'desc1', price:'30'});
+
+db.usergroups.insert({groupId:'1',userId: '1'});
+db.usergroups.insert({groupId:'1',userId: '2'});
+
+db.cart.insert({cartId:'1',groupId: '1', 'productId':'1',quantity:'1'});
+db.cart.insert({cartId:'1',groupId: '1', 'productId':'2',quantity:'2'});
+
+

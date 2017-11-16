@@ -1,0 +1,42 @@
+1. Create 3 instances on amazon aws
+
+2. download key mongodbkey
+ssh -i "mongodbkey.pem" ec2-user@ec2-13-57-59-177.us-west-1.compute.amazonaws.com
+
+3. 
+3.1 Edit repo file
+sudo vi /etc/yum.repos.d/mongodb-org-3.4.repo
+[mongodb-org-3.4]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/3.4/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+
+3.2 run yum
+sudo yum install -y mongodb-org
+
+[ec2-user@ip-172-31-24-156 etc]$ sudo mkdir /data
+[ec2-user@ip-172-31-24-156 etc]$ sudo mkdir /data/masterdb
+[ec2-user@ip-172-31-24-156 etc]$ sudo mongod --master --dbpath /data/masterdb/
+sudo chown mongod:mongod /data/masterdb/
+
+Ref:
+https://docs.mongodb.com/manual/core/master-slave/
+
+
+Optinal
+sudo yum -y update && sudo yum install -y mongodb-org-server \
+    mongodb-org-shell mongodb-org-tools
+	
+	
+ssh -i "mongodbkey.pem" ec2-user@ec2-13-57-59-177.us-west-1.compute.amazonaws.com - master
+ssh -i "mongodbkey.pem" ec2-user@ec2-54-183-167-137.us-west-1.compute.amazonaws.com
+
+slave
+ssh -i "mongodbkey.pem" ec2-user@ec2-13-56-241-86.us-west-1.compute.amazonaws.com	
+
+
+[ec2-user@ip-172-31-24-156 etc]$ sudo mkdir /data/slavedb
+sudo mongod --slave --dbpath /data/slavedb/
+db.sources.insert( { "host": "13.57.59.177:27017"} );
