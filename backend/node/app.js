@@ -4,11 +4,16 @@ var cors = require('cors');
 var app = express();
 var mongoose = require('mongoose');
 var schemas = require('./schema');
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+var cart = schemas.cart;
+var products = schemas.products;
 var port = 3000;
 var router = express.Router();
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
+
+// parse application/json
 
 mongoose.connect('mongodb://localhost:27017/cmpe281project');
 
@@ -20,7 +25,7 @@ router.use(function (req, res, next) {
 
 router.route('/cart').get(function (req, res) {
   console.log('GET cart');
-  schemas.cart.find(function (err, carts) {
+  cart.find(function (err, carts) {
     if (err) {
         res.send(err);
     }
@@ -30,10 +35,10 @@ router.route('/cart').get(function (req, res) {
 
 router.route('/cart').post(function (req, res) {
   console.log("in add");
+  console.log("in add:"+req);
   console.log("in add:"+req.body.cartId);
-  console.log("in add:"+req.cartId);
   
-  var p = new schemas.cart();
+  var p = new cart();
   p.cartId = req.body.cartId;
   p.groupId = req.body.groupId;
   p.productId = req.body.productId;
@@ -51,7 +56,7 @@ router.route('/cart').post(function (req, res) {
 
 router.route('/products').get(function (req, res) {
   console.log('GET products');
-  schemas.products.find(function (err, products) {
+  products.find(function (err, products) {
       if (err) {
           res.send(err);
       }

@@ -2,10 +2,10 @@ var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var CartSchema   = new Schema({
-    cartId : String,
-    groupId : String,
-    productId : String,
-    quantity : String
+    cartId : Number,
+    groupId : Number,
+    productId : Number,
+    quantity : Number
 });
 var cart = mongoose.model('cart', CartSchema);
 
