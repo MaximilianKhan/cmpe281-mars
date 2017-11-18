@@ -1,0 +1,12 @@
+{
+  "name": "cmpe281",
+  "version": "1.0.0",
+  "description": "product API",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "cors": "2.8.1",
+    "express": "^4.15.4",
+    "mongoose": "~3.6.13"
+  }
+}
