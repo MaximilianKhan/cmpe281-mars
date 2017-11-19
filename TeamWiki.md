@@ -76,3 +76,11 @@
 #### What we intend to achieve next week?
 * API for product and user
 * Front End dev
+
+### Week 8
+#### What we achieved?
+* Front End dev
+
+#### What we intend to achieve next week?
+* Test login on AWS Redis
+* Front End dev
