@@ -53,6 +53,26 @@ router.route('/cart').post(function (req, res) {
   })
 });
 
+router.route('/cart').post(function (req, res) {
+  console.log("in add");
+  console.log("in add:"+req);
+  console.log("in add:"+req.body.cartId);
+  
+  var p = new cart();
+  p.cartId = req.body.cartId;
+  p.groupId = req.body.groupId;
+  p.productId = req.body.productId;
+  p.quantity = req.body.quantity;
+  
+  p.save(function (err) {
+      if (err) {
+          res.send(err);
+      }
+      console.log("added");
+      res.send({ message: 'Cart Created !' })
+  })
+});
+
 
 router.route('/products').get(function (req, res) {
   console.log('GET products');
@@ -62,6 +82,14 @@ router.route('/products').get(function (req, res) {
       }
       res.send(products);
   });
+});
+
+router.route('/products/:productId').get(function (req, res) {
+    products.findById(req.params.productId, function (err, products) {
+        if (err)
+            res.send(err);
+        res.json(products);
+    });
 });
 
 
