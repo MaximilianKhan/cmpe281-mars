@@ -14,6 +14,8 @@ Using RESTApi calls on the server to improve ease of use, reusability and transp
 
 Automated unit testing framework for the encoding program.
 
+Using bootstrap for the frontend design to abstract/reduce the required css code
+
 ##### References
 
 Van Amerongen, R., (2009), Agile software development, the principles. Principle 10: Simplicity -the art of maximizing the amount of work not done- is essential. Retrieved from: https://technology.amis.nl/2009/08/03/agile-software-development-the-principles-principle-10-simplicity-the-art-of-maximizing-the-amount-of-work-not-done-is-essential/
