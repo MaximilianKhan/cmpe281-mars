@@ -2,6 +2,21 @@ body{
     background-color: rgb(254, 255, 254);
     padding:50px;
 }
+footer {
+    display: block;
+}
+
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#items{
+    padding-top: 30px;
+}
+.item_img{
+    background-color: rgb(254, 255, 254);
+}
 #login-dp{
     min-width: 250px;
     padding: 14px 14px 0;

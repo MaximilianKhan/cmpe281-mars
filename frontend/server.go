@@ -5,9 +5,7 @@ import (
 	"net/http"
 	"github.com/go-redis/redis"
 	"html/template"
-	"io/ioutil"
 	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 )
 
 type Image struct {
@@ -33,12 +31,10 @@ func loginHandler(w http.ResponseWriter, r *http.Request){
 		DB:       0,  // use default DB
 	})
 	password, _ := client.Get(r.Form["email"][0]).Result()
-	if (password == r.Form["pswd"])
-	{
+	if (password == r.Form["pswd"]){
 		http.Redirect(w, r, "/", http.StatusFound)
 		fmt.Println("Password", password)
-	}
-	else {
+	} else {
 		http.Redirect(w, r, "/", http.StatusNoContent)
 	}
 }
@@ -60,7 +56,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	title := r.URL.Path[1:]
 	page := &Page{numOfProducts: 0, images: []}
 	//connect to MongoDB database and pull product items
-	page := getPage(page)
+	page = getPage(page)
 	renderPage(w, title, items)
 	// http.ServeFile(w, r, title)
 }
